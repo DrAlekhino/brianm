@@ -48,7 +48,7 @@ export default function ImageCarousel({ items = [], pageType = 'graphic-design' 
           className="carousel-side-item w-24 h-32 rounded-lg  border-2 shadow-md transition-all transform -rotate-3 hover:scale-105 cursor-pointer"
           onClick={prevSlide}
           style={{ 
-            backgroundImage: `url("/images/${carouselItems[leftIndex].image}")`,
+            backgroundImage: `url("../images/${carouselItems[leftIndex].image}")`,
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}
@@ -62,7 +62,7 @@ export default function ImageCarousel({ items = [], pageType = 'graphic-design' 
         <div 
           className="carousel-main-item w-40 h-48 mx-4 rounded-lg border-2  shadow-lg z-10 transition-all hover:scale-105"
           style={{ 
-            backgroundImage: `url("/images/${carouselItems[currentIndex].image}")`,
+            backgroundImage: `url("../images/${carouselItems[currentIndex].image}")`,
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}
@@ -77,7 +77,7 @@ export default function ImageCarousel({ items = [], pageType = 'graphic-design' 
           className="carousel-side-item w-24 h-32 rounded-lg border-2  shadow-md transition-all transform rotate-3 hover:scale-105 cursor-pointer"
           onClick={nextSlide}
           style={{ 
-            backgroundImage: `url("/images/${carouselItems[rightIndex].image}")`,
+            backgroundImage: `url("../images/${carouselItems[rightIndex].image}")`,
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

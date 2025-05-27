@@ -3,6 +3,7 @@ import '../App.css';
 import "../global.css"
 import NavBar from '../components/NavBar';
 import PageWithNoContent from "../components/NoContent"
+import Footer1 from '../components/Footer1';
 
 export default function DigitalMarketing() {
   useEffect(() => {
@@ -10,6 +11,7 @@ export default function DigitalMarketing() {
   }, []);
 
   return (
+    <>
     <main className="min-h-screen w-screen pb-10 overflow-y-auto" style={{ background: "linear-gradient(to bottom left, #CCCCD4, #181889)" }}>
       <PageWithNoContent/>
       <NavBar />
@@ -99,5 +101,7 @@ export default function DigitalMarketing() {
         <div className="h-8"></div>
       </section>
     </main>
+    <Footer1/>
+    </>
   );
 }

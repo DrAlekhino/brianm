@@ -17,7 +17,7 @@ export default function NavBar() {
     <header className="z-50 left-0 px-3.5 top-0 w-full font-bold">
       {/* Navbar for large screens (hidden on small screens) */}
       <nav className="hidden sm:flex justify-between items-center max-w-full">
-        <img src="images/navLogo.png" alt="logo" className="w-auto h-20" />
+        <img src="../images/navLogo.png" alt="logo" className="w-auto h-20" />
         <ul className="flex justify-around gap-10">
           <li className='group'>
             <Link 

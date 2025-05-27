@@ -17,7 +17,7 @@ export default function LogoAnimation({ onAnimationComplete }) {
 
   return (<figure className="perspective-[-200px]">
           <img
-          src="/images/navLogo.png" 
+          src="images/navLogo.png" 
            alt="logo image"
             className="landingLogo"
          />

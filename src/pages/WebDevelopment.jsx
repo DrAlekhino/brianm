@@ -3,6 +3,7 @@ import '../App.css';
 import "../global.css"
 import NavBar from '../components/NavBar';
 import ImageCorousel from '../components/ImageCourousel';
+import Footer1 from '../components/Footer1';
 
 export default function WebDevelopment() {
   const [activeTabBrianM, setActiveTabBrianM] = useState("Design");
@@ -40,6 +41,7 @@ export default function WebDevelopment() {
   };
 
   return (
+    <>
     <main className="min-h-screen overflow-y-auto" style={{ background: "linear-gradient(to bottom left, #CCCCD4, #181889)" }}>
       <NavBar />
       
@@ -61,7 +63,7 @@ export default function WebDevelopment() {
         {/* Image Section */}
         <figure className='w-full md:w-1/2 flex justify-center mb-8 md:mb-0 animate-fade-in-left animate-delay-200'>
           <img 
-            src="../../public/images/cyborg.png" 
+            src="../images/cyborg.png" 
             alt="Web development illustration" 
             className='w-120 h-150 sm:max-h-[60vh] md:max-h-[70vh]  animate-float' 
           />
@@ -140,7 +142,7 @@ export default function WebDevelopment() {
                 bg-contain bg-center bg-no-repeat
                 animate-fade-in animate-delay-300
               ' style={{ 
-                backgroundImage: `url('/images/${tabContent[activeTabBrianM].image}')`
+                backgroundImage: `url('../images/${tabContent[activeTabBrianM].image}')`
               }}></div>
             </div>
           </aside>
@@ -216,7 +218,7 @@ export default function WebDevelopment() {
                 bg-contain bg-center bg-no-repeat
                 animate-fade-in animate-delay-300
               ' style={{ 
-                backgroundImage: `url('/images/${tabContent[activeTabAnotherProject].image}')`
+                backgroundImage: `url('../images/${tabContent[activeTabAnotherProject].image}')`
               }}></div>
             </div>
           </aside>
@@ -281,5 +283,7 @@ export default function WebDevelopment() {
         </div>
       )}
     </main>
+    <Footer1/>
+    </>
   );
 }

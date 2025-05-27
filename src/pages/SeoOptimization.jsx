@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import '../App.css';
 import '../global.css';
 import ImageCorousel from '../components/ImageCourousel';
+import Footer1 from '../components/Footer1';
 
 export default function SeoOptimization() {
   useEffect(() => {
@@ -19,7 +20,8 @@ export default function SeoOptimization() {
   ];
 
   return (
-    <main className="min-h-screen w-screen overflow-y-auto" style={{ background: "linear-gradient(to bottom left, #CCCCD4, #181889)" }}>
+    <>
+    <main className="min-h-screen w-screen overflow-y-auto scale-90" style={{ background: "linear-gradient(to bottom left, #CCCCD4, #181889)" }}>
       <NavBar />
       
       {/* Hero Section */}
@@ -40,16 +42,16 @@ export default function SeoOptimization() {
         {/* Image Section - Now properly sized to match other pages */}
         <figure className='w-full md:w-1/2 flex justify-center items-center animate-fade-in-left animate-delay-200'>
           <img 
-            src="../../public/images/SEO Optimization.png" 
+            src="../images/SEO Optimization.png" 
             alt="SEO Optimization illustration" 
-            className='h-120 w-150 '
+            className='h-120 w-130 '
             style={{
               boxShadow: "-6px 3px 6px rgba(0, 0, 0, 0.3)",
               animation: "float 6s ease-in-out infinite",
               maxWidth: "100%"
             }} 
-            width={250}
-            height={300}
+            width={200}
+            height={200}
           />
         </figure>
       </section>
@@ -127,5 +129,7 @@ export default function SeoOptimization() {
         </div>
       </section>
     </main>
+    <Footer1/>
+    </>
   );
 }
