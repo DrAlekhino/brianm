@@ -193,7 +193,7 @@ Please change the parent <Route path="${U}"> to <Route path="${U==="/"?"*":`${U}
                   transition-all duration-300
                   hover:scale-105 hover:shadow-lg
                   rounded-t-lg
-                `,children:"Website"})]}),o.jsxs("div",{onClick:()=>{N==="Design"?A():N==="Prototype"?window.open("https://xd.adobe.com/view/a969269c-f643-4b05-8f3b-ab5887d9b8df-fc3a/?fullscreen","_blank"):N==="Website"&&window.open("https://dralekhino.github.io/mbsky/","_blank")},className:`w-120 h-40
+                `,children:"Website"})]}),o.jsxs("div",{onClick:()=>{N==="Design"?A():N==="Prototype"?window.open("https://xd.adobe.com/view/a969269c-f643-4b05-8f3b-ab5887d9b8df-fc3a/?fullscreen","_blank"):N==="Website"&&window.open("https://dralekhino.github.io/jamesorodgers/","_blank")},className:`w-120 h-40
                 border-4 border-[#181889] 
                 bg-[#181889]/80 backdrop-blur-sm
                 rounded-lg rounded-tl-none p-4 sm:p-6 md:p-8
